@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="hu"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#795354",
+                    "outline": "#747871",
+                    "surface-dim": "#dbdad6",
+                    "outline-variant": "#c4c8bf",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#8b9a87",
+                    "surface-container-high": "#eae8e4",
+                    "on-tertiary-fixed-variant": "#3d4a3b",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f5f3ef",
+                    "surface": "#fbf9f5",
+                    "on-tertiary-container": "#253223",
+                    "tertiary-fixed": "#d8e7d2",
+                    "tertiary": "#546252",
+                    "primary-fixed": "#d3e8ce",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed": "#ffdad9",
+                    "surface-variant": "#e4e2de",
+                    "background": "#fbf9f5",
+                    "secondary-container": "#fdcbcb",
+                    "secondary-fixed-dim": "#ecbbba",
+                    "on-primary-fixed": "#0f1f0f",
+                    "primary-fixed-dim": "#b7ccb3",
+                    "surface-container-highest": "#e4e2de",
+                    "on-surface-variant": "#434842",
+                    "surface-tint": "#50634f",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#2f1314",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#bccbb7",
+                    "primary": "#50634f",
+                    "on-surface": "#1b1c1a",
+                    "on-background": "#1b1c1a",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#879b84",
+                    "surface-bright": "#fbf9f5",
+                    "inverse-primary": "#b7ccb3",
+                    "surface-container": "#efeeea",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#f2f0ed",
+                    "on-tertiary-fixed": "#121e12",
+                    "inverse-surface": "#30312e",
+                    "on-primary-container": "#213221",
+                    "secondary": "#7b5455",
+                    "on-primary-fixed-variant": "#394b38",
+                    "on-secondary-fixed-variant": "#603d3e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-white/80 dark:bg-stone-900/80 backdrop-blur-md fixed top-0 w-full z-50 flex justify-between items-center px-8 md:px-20 py-4 max-w-full mx-auto">
+<div class="text-2xl font-serif italic text-emerald-900 dark:text-emerald-200">The Botanical Archivist</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-stone-600 dark:text-stone-400 hover:text-emerald-700 transition-colors" href="#">Home</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-emerald-700 transition-colors" href="#">Shop</a>
+<a class="text-emerald-800 dark:text-emerald-400 font-medium border-b border-emerald-800/30" href="#">Services</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-emerald-700 transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hover:opacity-80 transition-all text-emerald-800 dark:text-emerald-400">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="md:hidden text-emerald-800">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow pt-32 pb-20 px-8 md:px-20 max-w-7xl mx-auto w-full">
+<!-- Header Section -->
+<header class="mb-24 text-center max-w-3xl mx-auto">
+<span class="text-primary font-label text-sm tracking-widest mb-4 block">OUR EXPERTISE</span>
+<h1 class="text-5xl md:text-6xl text-on-surface mb-8 leading-tight">Művészi Virágkötészet &amp; Dekoráció</h1>
+<p class="text-lg text-on-surface-variant font-body leading-relaxed">
+                Minden alkotásunk egy történetet mesél el. A vadvirágok szabadságát ötvözzük a klasszikus eleganciával, hogy felejthetetlen vizuális élményt teremtsünk az Ön legfontosabb pillanataihoz.
+            </p>
+</header>
+<!-- Services Content - Asymmetric Layout -->
+<div class="space-y-40">
+<!-- Wedding Floristry -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 relative group">
+<div class="absolute -inset-4 bg-primary-fixed-dim/20 rounded-xl -z-10 transform translate-x-4 translate-y-4"></div>
+<img alt="Wedding Flowers" class="w-full aspect-[4/5] object-cover rounded-xl shadow-sm transition-transform duration-700 group-hover:scale-[1.02]" data-alt="Exquisite wedding floral arrangement with soft pink peonies, white roses, and trailing eucalyptus on an antique wooden table in soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvfzaw6QRkWwbXaKOKqh-Wxx2sg--vOvtam_ZSYSdZTpefhi-cn4kRy7Mf_f_IGMWjgJj8_v0NAXBsXhCYCiUuwJYLdVK9zH0lSmUlolcXTt46DQD7eDpeB-am3izIbwObbri3s9faO0pb_r3bugnho2ezC0Q5uWfCCBTvRN3hbau0LCiL3s7Fy_Sr5BiemlEFJtUej3BwcNUbR0ump5eHMdLhJVAV9SxiyHTSsxTVLHWYDt0wHC78xy3v3jOtX8LRXIVDDJ1-Ztw"/>
+</div>
+<div class="md:col-span-5 md:pl-12">
+<h2 class="text-4xl text-on-surface mb-6">Esküvői Virágkötészet</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed font-body">
+                        A nagy nap minden részlete számít. A menyasszonyi csokortól a templomi díszítésen át a teljes asztaldekorációig, segítünk megvalósítani az Ön egyedi elképzeléseit, legyen szó rusztikus romantikáról vagy modern minimalizmusról.
+                    </p>
+<ul class="space-y-4 mb-10 text-on-surface-variant font-body">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm" data-icon="check_circle">check_circle</span> Személyre szabott konzultáció</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm" data-icon="check_circle">check_circle</span> Helyszíni installáció</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm" data-icon="check_circle">check_circle</span> Szezonális, prémium virágválaszték</li>
+</ul>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-full font-label font-semibold shadow-md hover:opacity-90 transition-all">
+                        Kérjen Ajánlatot
+                    </button>
+</div>
+</section>
+<!-- Event Decoration -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 md:order-1 order-2 md:pr-12">
+<h2 class="text-4xl text-on-surface mb-6">Rendezvény Dekoráció</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed font-body">
+                        Vállalati események, gálavacsorák vagy családi összejövetelek – a virágok élettel töltik meg a teret. Professzionális csapatunk gondoskodik róla, hogy a dekoráció tökéletesen illeszkedjen az esemény hangulatához és brandjéhez.
+                    </p>
+<div class="bg-surface-container-low p-8 rounded-xl mb-8">
+<p class="italic text-on-secondary-container font-serif">"A Botanical Archivist csapata teljesen átformálta a bemutatótermünket. A növényi installációk nem csak szépek voltak, de valódi atmoszférát teremtettek."</p>
+<p class="mt-4 text-sm font-label text-on-surface-variant">— Kovács Adél, Art Director</p>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-full font-label font-semibold shadow-md hover:opacity-90 transition-all">
+                        Kérjen Ajánlatot
+                    </button>
+</div>
+<div class="md:col-span-7 md:order-2 order-1 relative group">
+<div class="absolute -inset-4 bg-tertiary-fixed/30 rounded-xl -z-10 transform -translate-x-4 translate-y-4"></div>
+<img alt="Event Decor" class="w-full aspect-[16/10] object-cover rounded-xl shadow-sm transition-transform duration-700 group-hover:scale-[1.02]" data-alt="Sophisticated indoor event space with long tables featuring towering floral centerpieces of orchids and lilies under warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8OzluR4bHLKUQLuHy2Q02g1ljCGY21HdfZ5HdPmvNV5b2HIRs4uszk6ayZVuHby1dUp3zp_zkh6zNSSqP4ogyaHkoT8I1tm1-nyzNBTRsRGbsVQXKJr-5FqwW1DGbj2sdxGx6kVX4H9Zexp4_yribfw0LBfL3zjRLMiDdaPt0PNqFsUiosJFBIEAqHeP39yFn5_QnAKLsg-9_BzlHtyaEw87wQvCQNfXV-jg4OkS8BXKRX2Nl6XRSQIDI_Rmr3KlQmYTHxd2vF-k"/>
+</div>
+</section>
+<!-- Custom Orders -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 relative group">
+<div class="absolute -inset-4 bg-secondary-fixed/20 rounded-xl -z-10 transform translate-x-4 -translate-y-4"></div>
+<img alt="Custom Bouquet" class="w-full aspect-square object-cover rounded-xl shadow-sm transition-transform duration-700 group-hover:scale-[1.02]" data-alt="Close-up of a hand-tied artisan bouquet with wild sunflowers, blue delphiniums, and dried grasses wrapped in heavy premium paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByjdx5ym5E3YnATS2BnRy28k-OPonwm4kj1wkrTL16oGQCa7fhXDxpdhiDN1k9xcwLs-FbjOtOv8GKz5AbyrRKyuTb08b3qc23bopU-oHfykXXpxz3pArzFZrC_pLSwsWWp8CP6-VpqudJBssjiQMdGF8i0Wc83n3jmxtEKw8oHHwYncvq-dc8fzMjDLjgY7gvI6PoNO1HSp8tB9ynrrOFkTRAlzOK-DzC5oYLpl82TqwdmrUb2igbFfp3KQBXRj4g3Qq8993ftY8"/>
+</div>
+<div class="md:col-span-5 md:pl-12">
+<h2 class="text-4xl text-on-surface mb-6">Egyedi Megrendelések</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed font-body">
+                        Különleges alkalmakra különleges virágok járnak. Legyen szó születésnapról, évfordulóról vagy csak egy kedves gesztusról, egyedi csokrainkkal és növényi kompozícióinkkal garantáltan örömet szerez.
+                    </p>
+<div class="flex flex-wrap gap-3 mb-10">
+<span class="px-4 py-2 bg-surface-container-high rounded-full text-sm font-label text-on-surface-variant">Születésnap</span>
+<span class="px-4 py-2 bg-surface-container-high rounded-full text-sm font-label text-on-surface-variant">Home Decor</span>
+<span class="px-4 py-2 bg-surface-container-high rounded-full text-sm font-label text-on-surface-variant">Ajándékbox</span>
+<span class="px-4 py-2 bg-surface-container-high rounded-full text-sm font-label text-on-surface-variant">Szárított virágok</span>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-full font-label font-semibold shadow-md hover:opacity-90 transition-all">
+                        Kérjen Ajánlatot
+                    </button>
+</div>
+</section>
+</div>
+<!-- Contact Section / Final CTA -->
+<div class="mt-40 bg-surface-container-low rounded-3xl p-12 md:p-24 text-center">
+<h3 class="text-4xl mb-6">Tervezzük meg együtt</h3>
+<p class="text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed">
+                Kérdése van vagy konkrét elképzeléssel rendelkezik? Szívesen segítünk a tervezésben és a megvalósításban egyaránt. Keressen minket bizalommal!
+            </p>
+<div class="flex flex-col md:flex-row justify-center items-center gap-6">
+<div class="flex items-center gap-3 text-primary font-semibold">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+                    +36 30 123 4567
+                </div>
+<div class="hidden md:block w-1.5 h-1.5 bg-outline-variant rounded-full"></div>
+<div class="flex items-center gap-3 text-primary font-semibold">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+                    hello@botanicalarchivist.hu
+                </div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-950 w-full mt-auto py-16 px-8 md:px-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start max-w-7xl mx-auto">
+<div>
+<div class="font-serif text-xl text-emerald-900 dark:text-emerald-200 mb-4">The Botanical Archivist</div>
+<p class="text-stone-700 dark:text-stone-300 font-sans text-sm leading-relaxed">
+                    © 2024 The Botanical Archivist. Cultivating beauty in every bloom. All rights reserved.
+                </p>
+</div>
+<div>
+<h4 class="font-label font-bold text-emerald-800 dark:text-emerald-400 mb-6 tracking-wider">LINKS</h4>
+<div class="flex flex-col gap-4">
+<a class="text-stone-500 hover:text-emerald-600 transition-colors" href="#">Contact</a>
+<a class="text-stone-500 hover:text-emerald-600 transition-colors" href="#">Instagram</a>
+<a class="text-stone-500 hover:text-emerald-600 transition-colors" href="#">Pinterest</a>
+</div>
+</div>
+<div>
+<h4 class="font-label font-bold text-emerald-800 dark:text-emerald-400 mb-6 tracking-wider">NEWSLETTER</h4>
+<form class="flex flex-col gap-4">
+<input class="bg-surface-container-high border-none rounded-lg px-4 py-3 focus:ring-1 focus:ring-primary" placeholder="Your email address" type="email"/>
+<button class="bg-primary text-on-primary py-3 rounded-lg font-label font-medium hover:opacity-90 transition-all">Signup</button>
+</form>
+</div>
+</div>
+</footer>
+</body></html>
